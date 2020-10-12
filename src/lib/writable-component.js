@@ -1,5 +1,4 @@
 import { SimpleComponent } from "./simple-component";
-import { SimpleComponent } from "./simple-component";
 
 /* A writable class holds an alias property to change the element's textContent and extends SimpleComponent */
 
