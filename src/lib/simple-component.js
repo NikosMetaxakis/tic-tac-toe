@@ -1,7 +1,7 @@
 export class SimpleComponent {
     /**
-   * This class generates a element property containing a NodeElement to be appended into the DOM. This class should be
-   * the base of every other component we will create and therefore should also contain its removal from dom.
+   * This class generates an element property containing a NodeElement to be appended into the DOM. This class should be
+   * the base of every other component we will created and therefore should also contain its removal from dom.
    * @param selector {String} the selector of the element to be created
    */
     constructor(selector) {
