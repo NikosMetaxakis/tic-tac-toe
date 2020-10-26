@@ -1,4 +1,4 @@
-import { ListComponent } from "../lib/list-component";
+import { ListComponent } from "../libs/list-component";
 import { GameRow } from "./game-row";
 /*GameField is responsible for creating the actual elements of the game.
 We do this by iterating over the provided field from GameEngine and 

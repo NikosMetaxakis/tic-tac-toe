@@ -1,4 +1,4 @@
-import { WritableComponent } from "../lib/writable-component";
+import { WritableComponent } from "../libs/writable-component";
 
 /* GameSlot is the class that's responsible for maintaining visual correlation between 
 the GameEngine and the GameHud. Because this holds but the structure of the Component, 
@@ -8,24 +8,24 @@ that method into a Model or Service) */
 
 export class GameSlot extends WritableComponent {
 /*This class takes slot as an argument; this will be made further on, on the 
-    GameEngine library, for now, we need only worry that this Object will have, 
-    in the future, to be populated with {row: number, column: number} and that 
-    even further down, it will have a symbol property */
-    constructor (slot) {
-        super("game-slot");
-        /*We set the style of the element after calling its super class and since 
-        we know this.element is a DOM Node we can call all the browser functionalities 
-        on it - namely setAttibute() */
-        this.element.setAttribute(
-        "style",
-        "height: 60px; width: 60px; background-color: grey; display: inline-block; " +
-        "border: 1px solid black; margin: 5px; font-size: large; color: black; line-height: 60px;" +
-        "text-align: center; cursor: pointer"
-        );
+GameEngine library, for now, we need only worry that this Object will have, 
+in the future, to be populated with {row: number, column: number} and that 
+even further down, it will have a symbol property */
+constructor (slot) {
+    super("game-slot");
+    /*We set the style of the element after calling its super class and since 
+    we know this.element is a DOM Node we can call all the browser functionalities 
+    on it - namely setAttibute() */
+    this.element.setAttribute(
+    "style",
+    "height: 60px; width: 60px; background-color: grey; display: inline-block; " +
+    "border: 1px solid black; margin: 5px; font-size: large; color: black; line-height: 60px;" +
+    "text-align: center; cursor: pointer"
+    );
 
-        this.element.setAttribute("slot-row", slot.row);
-        this.element.setAttribute("slot-column", slot.column);
-        this.element.textContent = "-";
+    this.element.setAttribute("slot-row", slot.row);
+    this.element.setAttribute("slot-column", slot.column);
+    this.element.textContent = "-";
     }
 
     /*Again, overwriting the base class method because we want it to do 
@@ -34,4 +34,4 @@ export class GameSlot extends WritableComponent {
         super.textContent = slot.symbol;
         this.element.style.backgroundColor = "white";
     }
- }
+}
