@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebundle": "cp src/index.html dist/index.html",
-    "bundle":
-      "browserify src/game-start.js -t babelify --outfile dist/bundle.js"
+    "bundle": "browserify src/game-start.js -t babelify --outfile dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -23,12 +22,16 @@
   },
   "homepage": "https://github.com/NikosMetaxakis/tic-tac-toe#readme",
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-latest": "^6.24.1",
     "babelify": "^10.0.0",
     "browserify": "^16.5.2"
   },
   "browserify": {
-    "transform": ["babelify"]
+    "transform": [
+      "babelify"
+    ]
   }
 }

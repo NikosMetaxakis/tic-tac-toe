@@ -1,4 +1,4 @@
-/** Create a representation of a square grid using Arrays that will match to our "game map" */
+/*Create a representation of a square grid using Arrays that will match to our "game map"*/
 export function createSquare(height) {
     const rows = height || 3; //use the provided argument or default to size 3x3
     const columns = height || 3;
