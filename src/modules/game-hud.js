@@ -1,7 +1,7 @@
-import { GameEngine } from "../libs/game-engine";
-import { GameField } from "../components/game-field";
-import { Notice } from "../components/notice";
-import { TurnInformation } from "../components/turn-information";
+import { GameEngine } from "../libs/game-engine.js";
+import { GameField } from "../components/game-field.js";
+import { Notice } from "../components/notice.js";
+import { TurnInformation } from "../components/turn-information.js";
 
 /*The GameHud class is what wraps all Components into the DOM as well 
 as being responsible for the interaction between the user interface 
@@ -27,7 +27,7 @@ export class GameHud {
         if(oldGameField) document.body.removeChild(oldGameField);
 
         /*Create a new GameField component*/
-        this.gameField = new GameField(t.gameField.field);
+        this.gameField = new GameField(this.gameEngine.field);
 
         /*We attach the click event to our GameSlots so we can click and 
         have them actually work*/

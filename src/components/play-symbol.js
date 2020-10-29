@@ -1,4 +1,4 @@
-import { WritableComponent } from "../libs/writable-component";
+import { WritableComponent } from "../libs/writable-component.js";
 
 /*Much like CurrentTurn, it shows the symbol that is playing now*/
 export class PlaySymbol extends WritableComponent {

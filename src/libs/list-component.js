@@ -1,4 +1,4 @@
-import { SimpleComponent } from "./simple-component";
+import { SimpleComponent } from "./simple-component.js";
 /** A list component is a Component that its main functionality is to hold other components which need to be grabbed
  in any form or situation. We do this by assigning each new component into an `items` property so that the
  `getItem` statement can then retrieve it*/

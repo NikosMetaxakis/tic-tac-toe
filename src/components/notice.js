@@ -1,5 +1,5 @@
-import { BackgroundPane } from "./background-pane";
-import {SimpleComponent } from "../libs/simple-component";
+import { BackgroundPane } from "./background-pane.js";
+import {SimpleComponent } from "../libs/simple-component.js";
 
 /*Notice is the component we use when we want to show any 
 special message to the user. We first create the backgroundPane 

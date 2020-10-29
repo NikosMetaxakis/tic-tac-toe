@@ -1,4 +1,4 @@
-import { WritableComponent } from "../libs/writable-component";
+import { WritableComponent } from "../libs/writable-component.js";
 
 /*This class holds the current turn number. Its overwriting its 
 base class because we want to add more text than

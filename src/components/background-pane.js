@@ -1,4 +1,4 @@
-import { SimpleComponent } from "../libs/simple-component";
+import { SimpleComponent } from "../libs/simple-component.js";
 
 /*A simple semi-transparent back-pane*/
 export class BackgroundPane extends SimpleComponent {

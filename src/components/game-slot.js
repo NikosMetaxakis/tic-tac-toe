@@ -1,4 +1,4 @@
-import { WritableComponent } from "../libs/writable-component";
+import { WritableComponent } from "../libs/writable-component.js";
 
 /* GameSlot is the class that's responsible for maintaining visual correlation between 
 the GameEngine and the GameHud. Because this holds but the structure of the Component, 

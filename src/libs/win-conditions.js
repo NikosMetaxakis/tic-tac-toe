@@ -1,4 +1,4 @@
-import { createSquare } from "./map";
+import { createSquare } from "./map.js";
 /*Now that we have our field and our "customized slots", we can 
 define "win conditions" pretty easily */
 

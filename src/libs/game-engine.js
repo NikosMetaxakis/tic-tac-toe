@@ -2,8 +2,8 @@
 Created by Mosh Mage on 1/22/2017.
 */
 "use strict";
-import { WinCondition } from "./win-conditions";
-import { createSquare } from "./map";
+import { WinCondition } from "./win-conditions.js";
+import { createSquare } from "./map.js";
 
 /*With the map and Win Conditions out of the way, what's left for 
 us to do is the Game Engine itself. This class should take care 
@@ -16,7 +16,7 @@ export class GameEngine {
         this.turnOf = lastWinner ? lastWinner : Math.round(Math.random()) === 0 ?
             symbols[0] : symbols[1];
         this.symbols = symbols;
-        this.field = createSquare(3);
+        this.field = createSquare(3);   console.log("this.field: ", this.field);
         this.winCondition = new WinCondition(this.field)
     }
 

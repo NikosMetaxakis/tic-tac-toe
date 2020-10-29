@@ -1,6 +1,6 @@
-import { SimpleComponent } from "../libs/simple-component";
-import { PlaySymbol } from "./play-symbol";
-import { CurrentTurn } from "./current-turn";
+import { SimpleComponent } from "../libs/simple-component.js";
+import { PlaySymbol } from "./play-symbol.js";
+import { CurrentTurn } from "./current-turn.js";
 
 /*TurnInformation is the class that wraps CurrentTurn and Symbol 
 into a whole component. It's not a extension of ListComponent

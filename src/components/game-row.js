@@ -1,5 +1,5 @@
-import { ListComponent } from "../libs/list-component";
-import { GameSlot } from "./game-slot";
+import { ListComponent } from "../libs/list-component.js";
+import { GameSlot } from "./game-slot.js";
 
 /*GameRow is responsible for iterating the rows and creating the
 respective GameSlot, much like GameField */
@@ -11,7 +11,6 @@ export class GameRow extends ListComponent {
         let gameSlot;    
         this.items = [];
         this.element.setAttribute("style", "display: block;");
-
         row.forEach(slot => {
             gameSlot = new GameSlot(slot);
             this.element.appendChild(gameSlot.element);
